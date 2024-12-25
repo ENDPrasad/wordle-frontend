@@ -1,0 +1,115 @@
+
+:root {
+    --background-color: rgb(31, 30, 30);
+    --text-color: whitesmoke;
+    --correct-color: #82c91e;
+    --wrong-color: gray;
+    --partial-color: #fab005;
+}
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--text-color);
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+/* section {
+    border: 1px solid black;
+} */
+
+.app-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+.inputs{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin: 1rem;
+}
+
+input {
+    width: 3rem;
+    height: 3rem;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid gray;
+    text-transform: uppercase;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.btn-section {
+    width: 100%;
+}
+
+.btns  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+button {
+    padding: 0.7rem 1.4rem;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    /* background-color: skyblue; */
+}
+
+.some-where {
+    background-color: var(--partial-color);
+    border: 2px solid var(--partial-color);
+}
+
+.no-where {
+    background-color: var(--wrong-color);
+    border: 2px solid var(--wrong-color);
+}
+
+.correct {
+    background-color: var(--correct-color);
+    border: 2px solid var(--correct-color);
+}
